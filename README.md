@@ -1,2 +1,2 @@
 # leetcode-tour
-Capture how I change from not good to good to excerllent with leetcode
+Capture how I change from not good to good with leetcode
