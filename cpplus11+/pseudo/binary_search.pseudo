@@ -1,0 +1,25 @@
+//pseudocode for binary search main algorithm
+procedure binarySearch(arr[], target)
+  if len(arr) == 0 do
+    return -1
+  end
+  
+  set left = 0
+  set right = len(arr) - 1
+  while (left <= right) do 
+    // prevent (left + right) ovrflow
+    int mid = left + (right - left) // 2
+    if (arr[mid] == target) do
+      return mid
+    end else if (arr[mid] < target) do
+      // search for target at the right of the middle
+      left = mid + 1
+    end else do
+      // search for target at the left side of the middle
+      right = mid - 1
+    end
+  end
+
+  // target is not present
+  return -1
+end procedure
